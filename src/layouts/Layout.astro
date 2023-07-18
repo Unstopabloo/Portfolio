@@ -12,12 +12,22 @@ const { description } = Astro.props
     <title>{pageTitle}</title>
   </head>
   <body class="site">
-    <slot />
+    <div class="main-site">
+      <slot />
+    </div>
   </body>
 </html>
 
 <style>
   .site {
     background-color: #f8fbee;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-site {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 </style>

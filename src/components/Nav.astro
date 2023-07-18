@@ -1,0 +1,40 @@
+---
+const links = ["Portfolio", "About", "Contanct"]
+---
+
+<nav class="navigation">
+  <ul class="navigation-nav">
+    {
+      links.map((link) => (
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            {link}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .navigation {
+    padding: 1rem;
+    width: 12%;
+    border-right: 1px solid #01200f;
+  }
+
+  .navigation-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-family: "Inter";
+    text-decoration: none;
+    font-size: 15px;
+    color: #7f7979;
+  }
+</style>
