@@ -1,0 +1,51 @@
+---
+import Card from "../components/ProyectCard.astro"
+---
+
+<section id="Portafolio" class="proyects">
+  <div class="proyects-first-content">
+    <h2 class="proyects-title">Proyectos destacados</h2>
+    <span class="proyects-tm">Portafolio 2023</span>
+  </div>
+  <Card
+    proyectTitle="Spotify Redesign"
+    proyectDescription="Rediseño de Spotify Web, hecho con Wordpress."
+    proyectImage="spotify-redesign"
+    redirect="https://pabloyarce.laboratoriodiseno.cl/spotify-redesign"
+  />
+  <Card
+    proyectTitle="Calku!"
+    proyectDescription="Minijuego algebraico, en desarrollo."
+    proyectImage="calku"
+  />
+</section>
+
+<style>
+  .proyects-first-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+  }
+
+  .proyects-title {
+    padding-top: 5rem;
+    gap: 2rem;
+    display: flex;
+    align-items: baseline;
+    color: #3b1f2b;
+    font-family: Playfair Display;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .proyects-tm {
+    color: #7f7979;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+</style>

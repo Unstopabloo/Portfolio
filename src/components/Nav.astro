@@ -1,5 +1,5 @@
 ---
-const links = ["Portfolio", "About", "Contanct"]
+const links = ["Inicio", "Portafolio", "Sobre mi", "Contacto"]
 ---
 
 <nav class="navigation">
@@ -7,7 +7,7 @@ const links = ["Portfolio", "About", "Contanct"]
     {
       links.map((link) => (
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href=`#${link}` >
             {link}
           </a>
         </li>
@@ -19,22 +19,48 @@ const links = ["Portfolio", "About", "Contanct"]
 <style>
   .navigation {
     padding: 1rem;
-    width: 12%;
+    width: 10%;
     border-right: 1px solid #01200f;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
   }
 
   .navigation-nav {
+    position: fixed;
+    top: 11%;
     display: flex;
     flex-direction: column;
     list-style: none;
     margin: 0;
+    padding: 0;
     gap: 1rem;
   }
 
   .nav-link {
+    position: relative;
     font-family: "Inter";
     text-decoration: none;
     font-size: 15px;
     color: #7f7979;
+  }
+
+  .nav-link::before {
+    content: "";
+    display: none;
+    position: absolute;
+    height: 2px;
+    width: 8px;
+    background-color: #000;
+    top: 40%;
+    left: -20px;
+  }
+
+  .nav-link:hover {
+    color: #000;
+
+    &::before {
+      display: block;
+    }
   }
 </style>

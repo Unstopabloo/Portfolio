@@ -1,22 +1,47 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import Nav from "../components/NAV.astro"
+import Presentation from "../layouts/Presentation.astro"
+import Nav from "../components/Nav.astro"
+import Proyects from "../layouts/Proyects.astro"
+import Techs from "../layouts/Techs.astro"
+import About from "../layouts/About.astro"
+import Contact from "../layouts/Contact.astro"
+import Footer from "../layouts/Footer.astro"
 ---
 
 <Layout
   pageTitle="Pablo Oyarce | Home Page"
-  description="Main site from Pablo Oyarce's Portfolio"
+  description="Desarrollador & Diseñador Web creativo y entusiasta especializado en experiencia de usuario e interfaces web."
 >
   <Nav />
-  <h1>Contenido</h1>
+  <main class="content">
+    <Presentation />
+    <Proyects />
+    <Techs titleSect="Mis tecnologías" />
+    <About />
+    <Contact titleSect="Mis redes sociales" />
+    <Footer />
+  </main>
 </Layout>
-<style>
+<style is:global>
   /* Registra tu font family personalizada y le indicamos al navegador dónde encontrarla. */
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display&display=swap");
 
-  h1 {
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 3rem;
+  .content {
+    width: 90%;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    background-color: #d1d4c6;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #7f7979;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #3b1f2b;
   }
 </style>

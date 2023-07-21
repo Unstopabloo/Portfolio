@@ -1,6 +1,5 @@
 ---
-const { pageTitle } = Astro.props
-const { description } = Astro.props
+const { pageTitle, description } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -8,8 +7,20 @@ const { description } = Astro.props
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content=`${description}` />
     <title>{pageTitle}</title>
+    <meta name="description" content=`${description}` />
+    <meta
+      name="og:description"
+      content="Desarrollador & Diseñador Web creativo y entusiasta especializado en experiencia de usuario e interfaces web."
+    />
+    <meta
+      name="keywords"
+      content="portafolio, portfolio 2023, desarrollador frontend, diseño web, web developer, Wordpress, PHP, JavaScript, React, Framework, Desarrollo de sitios web con WordPress"
+    />
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/webp" />
+    <script
+      src="https://kit.fontawesome.com/e245a32c73.js"
+      crossorigin="anonymous"></script>
   </head>
   <body class="site">
     <div class="main-site">
@@ -19,15 +30,21 @@ const { description } = Astro.props
 </html>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+
   .site {
     background-color: #f8fbee;
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
   .main-site {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: top;
   }
 </style>

@@ -1,0 +1,124 @@
+---
+const { titleSect } = Astro.props
+---
+
+<section class="tech-section">
+  <h2 class="tech-title">{titleSect}</h2>
+  <ul class="tech-list">
+    <li class="tech-item">
+      <a
+        class="tech-link"
+        target="_blank"
+        href="https://developer.mozilla.org/es/docs/Glossary/HTML5"
+      >
+        <i class="fa-brands fa-html5 fa-2xl"></i>
+      </a>
+    </li>
+    <li class="tech-item">
+      <a
+        class="tech-link"
+        target="_blank"
+        href="https://developer.mozilla.org/es/docs/Web/CSS"
+      >
+        <i class="fa-brands fa-css3-alt fa-2xl"></i>
+      </a>
+    </li>
+    <li class="tech-item">
+      <a
+        class="tech-link"
+        target="_blank"
+        href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+      >
+        <i class="fa-brands fa-js fa-2xl"></i>
+      </a>
+    </li>
+    <li class="tech-item">
+      <a class="tech-link" target="_blank" href="https://cl.wordpress.org/">
+        <i class="fa-brands fa-wordpress fa-2xl"></i>
+      </a>
+    </li>
+    <li class="tech-item">
+      <a class="tech-link" target="_blank" href="https://www.php.net/">
+        <i class="fa-brands fa-php fa-2xl"></i>
+      </a>
+    </li>
+    <li class="tech-item">
+      <a class="tech-link" target="_blank" href="https://es.react.dev/">
+        <i class="fa-brands fa-react fa-2xl"></i>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<style>
+  .tech-section {
+    background-color: #7f7979;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #01200f;
+  }
+
+  .tech-title {
+    color: #f8fbee;
+    font-family: Playfair Display;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: fit-content;
+    margin: 0;
+    padding: 5rem;
+  }
+
+  .tech-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+    max-width: 25rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tech-item {
+    background-color: #f8fbee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+
+  .tech-link {
+    color: #7f7979;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  }
+
+  .tech-link:hover .fa-html5 {
+    color: #f16a30;
+  }
+  .tech-link:hover .fa-css3-alt {
+    color: #2862e9;
+  }
+  .tech-link:hover .fa-js {
+    color: #efd81d;
+  }
+  .tech-link:hover .fa-wordpress {
+    color: #3e9bc0;
+  }
+  .tech-link:hover .fa-php {
+    color: #556096;
+  }
+  .tech-link:hover .fa-react {
+    color: #1ba1cc;
+  }
+</style>
