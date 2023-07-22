@@ -1,52 +1,16 @@
 ---
+import CallToAction from "../components/CallToAction.astro"
 const { titleSect } = Astro.props
 ---
 
 <section id="Contacto" class="contact-section">
   <h2 class="contact-title">{titleSect}</h2>
-  <ul class="contact-list">
-    <li class="contact-item">
-      <a
-        target="_blank"
-        class="contact-link"
-        href="https://www.linkedin.com/in/pablo-oyarce-ramirez-037b62b8/"
-      >
-        <i class="fa-brands fa-linkedin fa-2xl"></i>
-      </a>
-    </li>
-    <li class="contact-item">
-      <a
-        target="_blank"
-        class="contact-link"
-        href="https://github.com/Unstopabloo"
-      >
-        <i class="fa-brands fa-square-github fa-2xl"></i>
-      </a>
-    </li>
-    <li class="contact-item">
-      <a
-        target="_blank"
-        class="contact-link"
-        href="mailto:pablooyarceramirez@gmail.com"
-      >
-        <i class="fa-regular fa-envelope fa-2xl"></i>
-      </a>
-    </li>
-    <li class="contact-item">
-      <a
-        target="_blank"
-        class="contact-link"
-        href="https://www.instagram.com/unstopabloo/"
-      >
-        <i class="fa-brands fa-instagram fa-2xl"></i>
-      </a>
-    </li>
-  </ul>
+  <CallToAction />
 </section>
 
 <style>
   .contact-section {
-    background-color: #7f7979;
+    background-color: #6e6767;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,51 +30,5 @@ const { titleSect } = Astro.props
     width: fit-content;
     margin: 0;
     padding: 5rem;
-  }
-
-  .contact-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4.5rem;
-    max-width: 35rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .contact-item {
-    background-color: #f8fbee;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-  }
-
-  .contact-link {
-    color: #7f7979;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    display: grid;
-    place-items: center;
-    text-decoration: none;
-  }
-
-  .contact-link:hover .fa-linkedin {
-    color: #0270ad;
-  }
-
-  .contact-link:hover .fa-square-github {
-    color: #000000;
-  }
-
-  .contact-link:hover .fa-envelope {
-    color: #e34133;
-  }
-
-  .contact-link:hover .fa-instagram {
-    color: #cf358f;
   }
 </style>
