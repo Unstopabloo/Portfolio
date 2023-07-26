@@ -61,4 +61,20 @@ const { proyectTitle, proyectDescription, proyectImage, redirect } = Astro.props
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 925px) {
+    .proyect-card {
+      padding: 2rem 0 2rem 5rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .proyect-card-info {
+      padding: 0;
+    }
+
+    .proyect-card-image {
+      width: 60%;
+    }
+  }
 </style>

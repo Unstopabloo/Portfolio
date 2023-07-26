@@ -34,18 +34,24 @@ import Card from "../components/ProyectCard.astro"
     align-items: baseline;
     color: #3b1f2b;
     font-family: Playfair Display;
-    font-size: 70px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
   .proyects-tm {
-    color: #7f7979;
+    color: #6e6767;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  @media screen and (max-width: 925px) {
+    .proyects-title {
+      font-size: 5.3vw;
+    }
   }
 </style>
