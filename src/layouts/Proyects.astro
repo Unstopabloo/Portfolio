@@ -8,21 +8,21 @@ import Card from '../components/ProyectCard.astro'
     <span class="proyects-tm">Portafolio 2023</span>
   </div>
   <Card
-    proyectTitle="Age Calculator"
-    proyectDescription="Calculador de edad. Desafio de Frontend Mentor"
-    proyectImage="age-calculator"
-    redirect="https://calculador-de-edad.netlify.app/"
+    proyectTitle="Planet Facts"
+    proyectDescription="Primer proyecto real que desarrollo en React. Para desarrollarlo utilice React Router y perfeccione el manejo de estado y efectos."
+    proyectImage="planet-facts"
   />
   <Card
     proyectTitle="Spotify Redesign"
-    proyectDescription="Rediseño de Spotify Web, hecho con Wordpress."
+    proyectDescription="Rediseño de Spotify Web, quise mantener la misma estetica del original, solo cambie un poco los colores. Esta desarrollado con Wordpress para lo que perfeccione el uso de Custom Post Type y para el reproductor se uso AJAX de jQuery."
     proyectImage="spotify-redesign"
     redirect="https://pabloyarce.laboratoriodiseno.cl/spotify-redesign"
   />
   <Card
-    proyectTitle="Calku!"
-    proyectDescription="Minijuego algebraico, en desarrollo."
-    proyectImage="calku"
+    proyectTitle="Age Calculator"
+    proyectDescription="Calculador de edad. Desafio de Frontend Mentor. En este puse en practica toda la logica condicional en JavaScript."
+    proyectImage="age-calculator"
+    redirect="https://calculador-de-edad.netlify.app/"
   />
 </section>
 
@@ -57,7 +57,9 @@ import Card from '../components/ProyectCard.astro'
 
   @media screen and (max-width: 925px) {
     .proyects-title {
-      font-size: 5.3vw;
+      font-size: 12vw;
+      font-weight: 600;
+      text-align: center;
     }
   }
 </style>
